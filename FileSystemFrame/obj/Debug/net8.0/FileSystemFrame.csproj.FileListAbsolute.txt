@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.AssemblyInfo.cs
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.sourcelink.json
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\bin\Debug\net8.0\FileSystemFrame.deps.json
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\bin\Debug\net8.0\FileSystemFrame.dll
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\bin\Debug\net8.0\FileSystemFrame.pdb
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.dll
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\refint\FileSystemFrame.dll
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\FileSystemFrame.pdb
+C:\Users\user\source\repos\FileSystemApp\FileSystemFrame\obj\Debug\net8.0\ref\FileSystemFrame.dll

@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "FileSystemApp/1.0.0": {
+        "dependencies": {
+          "FileSystemFrame": "1.0.0"
+        },
         "runtime": {
           "FileSystemApp.dll": {}
+        }
+      },
+      "FileSystemFrame/1.0.0": {
+        "runtime": {
+          "FileSystemFrame.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "FileSystemApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileSystemFrame/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

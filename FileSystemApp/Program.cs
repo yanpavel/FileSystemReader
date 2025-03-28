@@ -1,27 +1,16 @@
-﻿using FileSystemApp;
-using System.Reflection.PortableExecutable;
+﻿using FileSystemFrame.Open;
 
 namespace FileSystemApp
 { 
     class Program
     {
-
-    static void Main()
+        static void Main()
         {
-            Console.WriteLine("Enter the file path:");
-            string filePath = Console.ReadLine();
-            var s = new RootDir();
-            s.ReadWholeFileSystem(filePath);
-            s.ReadSuperBlockBytes();
-            s.SizeAndOffset();
-            s.OutputRootDirData();
-            //f.ReadSuperBlockBytes();
-            // f.ReadFatTable();
-            /*var f = new RootDir();
-            f.ReadWholeFileSystem(filePath);
-            f.ReadSuperBlockBytes();
-            f.OutputRootDirData();
-            */
+            var fileSystem = new FileSystem();
+            var worker = new FileSystemWorker(fileSystem);
+            worker.ReadWholeFileSystem();
+            worker.SelectTheAction();
+
         }
     }
 }

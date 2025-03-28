@@ -12,3 +12,8 @@ C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\refint\F
 C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\FileSystemApp.pdb
 C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\FileSystemApp.genruntimeconfig.cache
 C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\ref\FileSystemApp.dll
+C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\FileSystemApp.sourcelink.json
+C:\Users\user\source\repos\FileSystemApp\FileSystemApp\bin\Debug\net8.0\FileSystemFrame.dll
+C:\Users\user\source\repos\FileSystemApp\FileSystemApp\bin\Debug\net8.0\FileSystemFrame.pdb
+C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\FileSystemApp.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\FileSystemApp\FileSystemApp\obj\Debug\net8.0\FileSyst.860DFF2A.Up2Date

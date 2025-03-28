@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\FileSystemApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemapp\\rootdir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|solutionrelative:filesystemapp\\rootdir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\open\\ifilesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\open\\ifilesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemapp\\superblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|solutionrelative:filesystemapp\\superblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\open\\filesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\open\\filesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7AF66-D933-4A1F-912B-8A598FA2ECD5}|FileSystemTests\\FileSystemTests.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemtests\\superblocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7AF66-D933-4A1F-912B-8A598FA2ECD5}|FileSystemTests\\FileSystemTests.csproj|solutionrelative:filesystemtests\\superblocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\objects\\datalogicdiskarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\objects\\datalogicdiskarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemapp\\filesystemworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|solutionrelative:filesystemapp\\filesystemworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\objects\\fattable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\objects\\fattable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\objects\\filecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\objects\\filecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\open\\dto\\superblockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\open\\dto\\superblockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemframe\\objects\\superblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBA73F89-6C0B-4B92-8CFD-AE3B16CDD7B4}|FileSystemFrame\\FileSystemFrame.csproj|solutionrelative:filesystemframe\\objects\\superblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|solutionrelative:filesystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|c:\\users\\user\\source\\repos\\filesystemapp\\filesystemapp\\fattable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4370D078-CF5F-4A02-BBCA-D4358BF848DD}|FileSystemApp\\FileSystemApp.csproj|solutionrelative:filesystemapp\\fattable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +50,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 767,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FATTable.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\FATTable.cs",
-              "RelativeDocumentMoniker": "FileSystemApp\\FATTable.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\FATTable.cs",
-              "RelativeToolTip": "FileSystemApp\\FATTable.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAuwAwAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FileSystemWorker.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\FileSystemWorker.cs",
+              "RelativeDocumentMoniker": "FileSystemApp\\FileSystemWorker.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\FileSystemWorker.cs",
+              "RelativeToolTip": "FileSystemApp\\FileSystemWorker.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwCIAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:38:35.031Z",
+              "WhenOpened": "2025-03-28T05:52:02.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileSystem.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\FileSystem.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Open\\FileSystem.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\FileSystem.cs",
+              "RelativeToolTip": "FileSystemFrame\\Open\\FileSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:10:45.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RootDir.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\RootDir.cs",
-              "RelativeDocumentMoniker": "FileSystemApp\\RootDir.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\RootDir.cs",
-              "RelativeToolTip": "FileSystemApp\\RootDir.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBUAAAAJAAAAAAAAAA==",
+              "Title": "IFileSystem.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\IFileSystem.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Open\\IFileSystem.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\IFileSystem.cs",
+              "RelativeToolTip": "FileSystemFrame\\Open\\IFileSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T12:20:03.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Superblock.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\Superblock.cs",
-              "RelativeDocumentMoniker": "FileSystemApp\\Superblock.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\Superblock.cs",
-              "RelativeToolTip": "FileSystemApp\\Superblock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T11:33:44.926Z",
+              "WhenOpened": "2025-03-25T15:21:19.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SuperblockTests.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemTests\\SuperblockTests.cs",
+              "RelativeDocumentMoniker": "FileSystemTests\\SuperblockTests.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemTests\\SuperblockTests.cs",
+              "RelativeToolTip": "FileSystemTests\\SuperblockTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:12:23.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataLogicDiskArea.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\DataLogicDiskArea.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Objects\\DataLogicDiskArea.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\DataLogicDiskArea.cs",
+              "RelativeToolTip": "FileSystemFrame\\Objects\\DataLogicDiskArea.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAIA1wBcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:00:08.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SuperblockDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\DTO\\SuperblockDTO.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Open\\DTO\\SuperblockDTO.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Open\\DTO\\SuperblockDTO.cs",
+              "RelativeToolTip": "FileSystemFrame\\Open\\DTO\\SuperblockDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:16:27.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FATTable.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\FATTable.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Objects\\FATTable.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\FATTable.cs",
+              "RelativeToolTip": "FileSystemFrame\\Objects\\FATTable.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T06:44:46.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Superblock.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\Superblock.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Objects\\Superblock.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\Superblock.cs",
+              "RelativeToolTip": "FileSystemFrame\\Objects\\Superblock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:00:27.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileContent.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\FileContent.cs",
+              "RelativeDocumentMoniker": "FileSystemFrame\\Objects\\FileContent.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemFrame\\Objects\\FileContent.cs",
+              "RelativeToolTip": "FileSystemFrame\\Objects\\FileContent.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAlwBYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:37:55.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\Program.cs",
               "RelativeDocumentMoniker": "FileSystemApp\\Program.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\FileSystemApp\\FileSystemApp\\Program.cs",
               "RelativeToolTip": "FileSystemApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T07:04:47.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T06:09:49.396Z"
             }
           ]
         },
@@ -101,6 +196,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }
