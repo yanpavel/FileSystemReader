@@ -62,54 +62,68 @@ namespace FileSystemFrame.Open
 
         public string ReadFileContent(string path)
         {
+            string[] listOfFolders = FoldersNameArray(path);
+
             var currentDir = GetDirObject();
-            var pathWithoutFirstSlash = path.Trim('/');
-            var listOfFolders = pathWithoutFirstSlash.Split('/');
 
             if (listOfFolders.Length > 1)
             {
                 for (var i = 0; i < listOfFolders.Length - 1; i++)
                 {
                     var folderName = listOfFolders[i];
-                    var dirList = currentDir.ReadDirectory();
-                    if (!dirList.Any(f=>f.FileName.Contains(folderName))) 
-                        throw new DirectoryNotFoundException($"Directory not found, current directory is {folderName}");
-                    var folder = dirList.First(f => f.FileName.Contains(folderName));
-                    var dirChains = ReadChains(folder.FirstBlock);
-                    var dirBytes = ReadByteByChains(dirChains);
+
+                    var entry = GetEntry(currentDir, folderName);
+                    var dirBytes = GetByteArrayFromEntry(entry);
+
                     currentDir = new DirObject(dirBytes);
                 }
             }
-            
-            var fileEntry = currentDir.ReadDirectory().FirstOrDefault(f => f.FileName.Contains(listOfFolders.Last()));
-            if(fileEntry == null) 
-                throw new NullReferenceException("First block is null");
 
-            var chains = ReadChains(fileEntry.FirstBlock);
-            var byteData = ReadByteByChains(chains);
+            var entryLast = GetEntry(currentDir, listOfFolders.Last());
+            var entryData = GetByteArrayFromEntry(entryLast);
 
-            if (fileEntry.FileName.Contains(".txt"))
+            if (entryLast.FileName.Contains(".txt"))
             {
-                string textContent = Encoding.UTF8.GetString(byteData);
+                string textContent = Encoding.UTF8.GetString(entryData);
                 return textContent;
             }
-            else if (fileEntry.FileName.Contains(".img") || fileEntry.FileName.Contains(".jpg") || fileEntry.FileName.Contains(".c"))
+            else if (entryLast.FileName.Contains('.'))
             {
                 var filePath = Path.GetTempFileName();
-                File.WriteAllBytes(filePath, byteData);
+                File.WriteAllBytes(filePath, entryData);
                 OpenFile(filePath);
                 return "File opened";
             }
             else
             {
-                var dirChains = ReadChains(fileEntry.FirstBlock);
-                var dirBytes = ReadByteByChains(dirChains);
-                currentDir = new DirObject(dirBytes);
+                currentDir = new DirObject(entryData);
                 var dirContent = currentDir.ReadDirectory();
                 dirContent.ForEach(f => Console.WriteLine($"File name: {f.FileName}, First block: {f.FirstBlock}, Attribute: {f.Attribute}"));
                 return "Directory content";
             }
 
+        }
+
+        private byte[] GetByteArrayFromEntry(FileEntry entry)
+        {
+            var dirChains = ReadChains(entry.FirstBlock);
+            var dirBytes = ReadByteByChains(dirChains);
+            return dirBytes;
+        }
+
+        private static FileEntry GetEntry(DirObject currentDir, string folderName)
+        {
+            var dirList = currentDir.ReadDirectory();
+            var entry = currentDir.GetFileEntry(dirList, folderName);
+            return entry;
+        }
+
+        private static string[] FoldersNameArray(string path)
+        {
+            var pathWithoutFirstSlash = path.Trim('/') 
+                ?? throw new DirectoryNotFoundException("Path is empty");
+            var listOfFolders = pathWithoutFirstSlash.Split('/');
+            return listOfFolders;
         }
 
         private List<int> ReadChains(uint firstBlock)

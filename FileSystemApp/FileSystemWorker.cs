@@ -1,5 +1,7 @@
-﻿using FileSystemFrame.Open;
+﻿using FileSystemFrame.Objects;
+using FileSystemFrame.Open;
 using FileSystemFrame.Open.DTO;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace FileSystemApp 
 
@@ -7,6 +9,7 @@ namespace FileSystemApp
    public class FileSystemWorker
     {
         private readonly IFileSystem _fileSystem;
+        private HashSet<string> _validCommands;
         public FileSystemWorker(IFileSystem fileSystem)
         {
             _fileSystem = fileSystem;
@@ -32,9 +35,9 @@ namespace FileSystemApp
             while (true)
             {                
                 Console.WriteLine("\nWrite the Action you want to do:");
-                var validCommands = new HashSet<string> { "help", "superblock", "fat", "root", "exit", "data logic", "read file"};
+                _validCommands = new HashSet<string> { "help", "superblock", "fat", "root", "exit", "data logic", "read file"};
                 var action = Console.ReadLine()?.ToLower().Trim();
-                if (!validCommands.Contains(action))
+                if (!_validCommands.Contains(action))
                 {
                     Console.WriteLine("Invalid command. Type 'help' for a list of commands. \n");
                 }
@@ -51,7 +54,12 @@ namespace FileSystemApp
                 switch (action)
                 {
                     case "help":
-                        Console.WriteLine("List of commands: \n - help; \n - Superblock; \n - Fat; \n - Root; \n - Exit; \n - Data logic \n");
+                        Console.WriteLine("List of commands: ");
+                        //\n - help; \n - Superblock; \n - Fat; \n - Root; \n - Exit; \n - Data logic \n
+                        foreach(var s in _validCommands)
+                        {
+                            Console.WriteLine(s);
+                        }
                         break;
                     case "superblock":
                         Console.WriteLine($"Block size = {_fileSystem.GetSuperblock().BlockSize}");
@@ -66,10 +74,6 @@ namespace FileSystemApp
                         var rootDir = _fileSystem.GetDirObject();
                         rootDir.ReadDirectory().ForEach(e => Console.WriteLine($"File name: {e.FileName}, First block: {e.FirstBlock}, Attribute: {e.Attribute} \n"));
                         break;
-                    /*case "data logic":
-                        var dataLogic = _fileSystem.GetDataLogicArea();
-                        dataLogic.GetEntries.ForEach(e => Console.WriteLine($"Block: {e} \n"));
-                        break;*/
                     case "read file":
                         Console.WriteLine("Enter the file name:");
                         var fileName = Console.ReadLine();

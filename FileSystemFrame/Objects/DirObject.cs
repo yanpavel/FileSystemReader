@@ -16,6 +16,12 @@ namespace FileSystemFrame.Objects
             _data = data;
         }
 
+        public FileEntry GetFileEntry(List<FileEntry> fileEntries, string fileName)
+        {
+            return fileEntries.FirstOrDefault(f => f.FileName.Contains(fileName))
+                        ?? throw new DirectoryNotFoundException($"{fileName} not found");
+        }
+
        
 
         public List<FileEntry> ReadDirectory()

@@ -8,12 +8,13 @@ namespace FileSystemTests
     public class SuperblockTests
     {
         IFileSystem fileSystem;
+        byte[] data;
 
         [SetUp]
         public void Setup()
         {
             fileSystem = new FileSystem();
-            var data = fileSystem.ReadFile("./TestData/v13.dat");
+            data = fileSystem.ReadFile("./TestData/v13.dat");
             fileSystem.LoadFileSystem(data);
         }
 
