@@ -68,11 +68,46 @@ namespace FileSystemTests
         }
 
 
-        [Test, Description("Проверка данных внутри Root directory")]
-        public void ValidRootFileInfo()
+        [Test, Description("Проверка изображения внутри Root directory")]
+        public void ValidTextFileInfo()
+        {
+            var content = fileSystem.ReadFileContent("/Akh13.txt");
+            content.Should().NotBeNullOrEmpty();
+        }
+
+        [Test, Description("Проверка текстового файла внутри Root directory")]
+        public void ValidJpgFileInfo()
         {
             var content = fileSystem.ReadFileContent("/w13.jpg");
             content.Should().NotBeNullOrEmpty();
+        }
+
+        [Test, Description("Проверка папки внутри Root directory")]
+        public void ValidDirectoryInfo()
+        {
+            var content = fileSystem.ReadFileContent("/source");
+            content.Should().NotBeNullOrEmpty();
+        }
+
+        [Test, Description("Проверка бинарного файла внутри Root directory")]
+        public void ValidCFileInfo()
+        {
+            var content = fileSystem.ReadFileContent("/source/padlock.c");
+            content.Should().NotBeNullOrEmpty();
+        }
+
+        [Test, Description("Проверка бинарного файла внутри Root directory")]
+        public void InvalidPathTest()
+        {
+            var path = "123";
+            try
+            {
+                var content = fileSystem.ReadFileContent(path);
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                ex.Message.Should().Be($"{path} not found");
+            }
         }
     }
 }

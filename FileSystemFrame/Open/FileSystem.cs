@@ -81,7 +81,12 @@ namespace FileSystemFrame.Open
 
             var entryLast = GetEntry(currentDir, listOfFolders.Last());
             var entryData = GetByteArrayFromEntry(entryLast);
+            return ProsessFileEntry(ref currentDir, entryLast, entryData);
 
+        }
+
+        private string ProsessFileEntry(ref DirObject currentDir, FileEntry entryLast, byte[] entryData)
+        {
             if (entryLast.FileName.Contains(".txt"))
             {
                 string textContent = Encoding.UTF8.GetString(entryData);
@@ -101,7 +106,6 @@ namespace FileSystemFrame.Open
                 dirContent.ForEach(f => Console.WriteLine($"File name: {f.FileName}, First block: {f.FirstBlock}, Attribute: {f.Attribute}"));
                 return "Directory content";
             }
-
         }
 
         private byte[] GetByteArrayFromEntry(FileEntry entry)
