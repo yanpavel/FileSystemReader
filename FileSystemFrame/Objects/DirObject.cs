@@ -1,10 +1,11 @@
 ﻿using FileSystemFrame.Exceptions;
+using FileSystemFrame.Open.DTO;
 using System.Reflection.Metadata;
 using System.Text;
 
 namespace FileSystemFrame.Objects
 {
-    public class DirObject
+    internal class DirObject
     {
         private readonly byte[] _data;
         private const int ENTRY_SIZE = 20;
@@ -16,7 +17,7 @@ namespace FileSystemFrame.Objects
             _data = data;
         }
 
-        public FileEntry GetFileEntry(List<FileEntry> fileEntries, string fileName)
+        public FileEntryDTO GetFileEntry(List<FileEntryDTO> fileEntries, string fileName)
         {
             return fileEntries.FirstOrDefault(f => f.FileName.Contains(fileName))
                         ?? throw new DirectoryNotFoundException($"{fileName} not found");
@@ -24,9 +25,9 @@ namespace FileSystemFrame.Objects
 
        
 
-        public List<FileEntry> ReadDirectory()
+        public List<FileEntryDTO> ReadDirectory()
         {
-            var records = new List<FileEntry>();
+            var records = new List<FileEntryDTO>();
             for (int i = 0; i < _data.Length / ENTRY_SIZE; i++)
             {
                 var fileRowBytes = _data.Skip(i * ENTRY_SIZE).Take(ENTRY_SIZE).ToArray();
@@ -40,7 +41,7 @@ namespace FileSystemFrame.Objects
                 var attribute = BitConverter.ToInt32(attributeBytes);
                 if (fileName != null && firstBlock != 0)
                 {
-                    var record = new FileEntry()
+                    var record = new FileEntryDTO()
                     {
                         FileName = fileName,
                         FirstBlock = firstBlock,
@@ -58,12 +59,5 @@ namespace FileSystemFrame.Objects
             //fileList()
         }
 
-    }
-
-    public class FileEntry
-    {
-        public string FileName { get; set; }
-        public uint FirstBlock { get; set; }
-        public int Attribute { get; set; }
     }
 }

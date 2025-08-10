@@ -4,7 +4,7 @@ using FileSystemFrame.Exceptions;
 
 namespace FileSystemFrame.Objects
 {
-    public class FATTable
+    internal class FATTable
     {
         private readonly byte[] _data;
         public FATTable(byte[] data) 

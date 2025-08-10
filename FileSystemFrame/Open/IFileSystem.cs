@@ -29,13 +29,13 @@ namespace FileSystemFrame.Open
         /// Get data about bytes from FAT table
         /// </summary>
         /// <returns></returns>
-        FATTable GetFatTable();
+        FatTableDTO GetFatTable();
 
         /// <summary>
         /// Get data about directories inside file system
         /// </summary>
         /// <returns></returns>
-        DirObject GetDirObject();
+        DirObjectDTO GetRootDirObject();
 
         /// <summary>
         /// Read file content from files inside file system

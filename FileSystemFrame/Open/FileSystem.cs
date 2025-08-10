@@ -24,18 +24,22 @@ namespace FileSystemFrame.Open
             };
         }
 
-        public FATTable GetFatTable()
+        public FatTableDTO GetFatTable()
         {
             if (fileContent == null) throw new Exception("file content is empty");
-            var fatTable = new FATTable(fileContent.GetFatTableBytes());
-            return fatTable;
+            var fatTableDTO = new FatTableDTO();
+            var fatTable =  new FATTable(fileContent.GetFatTableBytes());
+            fatTableDTO.ReadFatTable = fatTable.ReadFatTable();
+            return fatTableDTO;
         }
 
-        public DirObject GetDirObject()
+        public DirObjectDTO GetRootDirObject()
         {
             if (fileContent == null) throw new Exception("file content is empty");
-            var rootDir = new DirObject(fileContent.GetRootDirBytes());
-            return rootDir;
+            var dirDTO = new DirObjectDTO();
+            var dir = new DirObject(fileContent.GetRootDirBytes());
+            dirDTO.ReadFileDirectory = dir.ReadDirectory();
+            return dirDTO;
         }
         public void LoadFileSystem(byte[] data)
         {
@@ -64,7 +68,7 @@ namespace FileSystemFrame.Open
         {
             string[] listOfFolders = FoldersNameArray(path);
 
-            var currentDir = GetDirObject();
+            var currentDir = new DirObject(fileContent.GetRootDirBytes());
 
             if (listOfFolders.Length > 1)
             {
@@ -82,10 +86,10 @@ namespace FileSystemFrame.Open
             var entryLast = GetEntry(currentDir, listOfFolders.Last());
             var entryData = GetByteArrayFromEntry(entryLast);
             return ProsessFileEntry(ref currentDir, entryLast, entryData);
-
         }
 
-        private string ProsessFileEntry(ref DirObject currentDir, FileEntry entryLast, byte[] entryData)
+
+        private string ProsessFileEntry(ref DirObject currentDir, FileEntryDTO entryLast, byte[] entryData)
         {
             if (entryLast.FileName.Contains(".txt"))
             {
@@ -108,14 +112,14 @@ namespace FileSystemFrame.Open
             }
         }
 
-        private byte[] GetByteArrayFromEntry(FileEntry entry)
+        private byte[] GetByteArrayFromEntry(FileEntryDTO entry)
         {
             var dirChains = ReadChains(entry.FirstBlock);
             var dirBytes = ReadByteByChains(dirChains);
             return dirBytes;
         }
 
-        private static FileEntry GetEntry(DirObject currentDir, string folderName)
+        private static FileEntryDTO GetEntry(DirObject currentDir, string folderName)
         {
             var dirList = currentDir.ReadDirectory();
             var entry = currentDir.GetFileEntry(dirList, folderName);
@@ -137,7 +141,7 @@ namespace FileSystemFrame.Open
             int currentBlock = (int)firstBlock;
             while (true)
             {
-                var newEntry = fatTable.ReadFatTable().FirstOrDefault(k=>k.Key==currentBlock);
+                var newEntry = fatTable.ReadFatTable.FirstOrDefault(k=>k.Key==currentBlock);
                 var nextBlock = newEntry.Value;
                 if (nextBlock < 0)
                     break;

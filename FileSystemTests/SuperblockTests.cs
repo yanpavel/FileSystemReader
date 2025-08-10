@@ -34,7 +34,7 @@ namespace FileSystemTests
             var fatTable = fileSystem.GetFatTable();
             fatTable.Should().NotBeNull();
 
-            foreach (var f in fatTable.ReadFatTable())
+            foreach (var f in fatTable.ReadFatTable)
             {
                 Console.Write(f.Key + " ");
                 f.Key.Should().BeInRange(-1024, 1024);
@@ -46,8 +46,8 @@ namespace FileSystemTests
         [Test, Description("Проверка данных в Root dir")]
         public void ValidRootDir()
         {
-            var rootDir = fileSystem.GetDirObject();
-            foreach (var r in rootDir.ReadDirectory())
+            var rootDir = fileSystem.GetRootDirObject();
+            foreach (var r in rootDir.ReadFileDirectory)
             {
                 switch (r.Attribute)
                 {

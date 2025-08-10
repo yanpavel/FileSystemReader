@@ -8,7 +8,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace FileSystemFrame.Objects
 {
-    class DataLogicDiskArea
+    internal class DataLogicDiskArea
     {
         private readonly byte[] _data;
         private readonly int _blockSize;

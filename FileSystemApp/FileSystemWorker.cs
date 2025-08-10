@@ -68,11 +68,11 @@ namespace FileSystemApp
                         break;
                     case "fat":
                         var fatTable = _fileSystem.GetFatTable();
-                        fatTable.ReadFatTable().ToList().ForEach(e => Console.WriteLine($"Key: {e.Key}, Value: {e.Value} \n"));
+                        fatTable.ReadFatTable.ToList().ForEach(e => Console.WriteLine($"Key: {e.Key}, Value: {e.Value} \n"));
                         break;
                     case "root":
-                        var rootDir = _fileSystem.GetDirObject();
-                        rootDir.ReadDirectory().ForEach(e => Console.WriteLine($"File name: {e.FileName}, First block: {e.FirstBlock}, Attribute: {e.Attribute} \n"));
+                        var rootDir = _fileSystem.GetRootDirObject();
+                        rootDir.ReadFileDirectory.ForEach(e => Console.WriteLine($"File name: {e.FileName}, First block: {e.FirstBlock}, Attribute: {e.Attribute} \n"));
                         break;
                     case "read file":
                         Console.WriteLine("Enter the file name:");
